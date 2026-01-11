@@ -42,3 +42,9 @@ button:first-of-type {
 button::hover {
     cursor: pointer;   
 }
+
+#p-el {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
