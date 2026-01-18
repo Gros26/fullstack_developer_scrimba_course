@@ -1,0 +1,13 @@
+body {
+    margin: 20px;
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card {
+    border: 1px blue dotted;
+    padding: 20px;
+    display: flex;
+}
