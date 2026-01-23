@@ -19,7 +19,7 @@ body {
 
 }
 
-h1, h2, h4, h3 {
+h1, h2, h4, h3, p {
     text-shadow: 0px 0px 1px black;
 }
 
@@ -41,12 +41,12 @@ h1, h2, h4, h3 {
 
 .gift-img {
     background-image: url("images/gift-cover.jpg");
-    background-size: cover;
     height: 400px;
     background-position: center;
     width: 400px;
     border: 5px solid white;
     border-radius: 10px;
+    background-size: cover;
 }
 
 .gift-title {
@@ -79,5 +79,22 @@ h1, h2, h4, h3 {
 
 #badass-section:hover {
     background-image: url("images/badass.gif");
+}
+
+#cheers-section {
+    height: 200px;
+}
+
+#cheers-section:hover {
+    background-image: url("images/cheers.gif");
+}
+
+a {
+    color: white ;
+}
+
+p {
+    width: 400px;
+    margin: 40px auto 20px;
 }
 
