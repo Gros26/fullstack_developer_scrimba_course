@@ -1,9 +1,10 @@
 .container {
     border: 8px solid #016a26;
-    height: 260px;
+    height: 360px;
     display: flex;
-    justify-content: space-around; /*Esto modifica el eje x*/
-    align-items: start; /*Esto modifica el eje y*/
+    flex-direction: column; /*Aqui se especifica que hagan stack en una columna, por defecto es en una fila*/
+    justify-content: start; /*Esto modifica el eje x(main axis). Pero como cambiamos la direccion ahora sera al contrario y manejara el cross axis*/
+    align-items: center; /*Esto modifica el eje y(cross axis). Pero como cambiamos la direccion ahora sera al contrario y manejara el main axis*/
 }
 
 .item {
