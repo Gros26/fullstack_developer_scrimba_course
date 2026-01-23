@@ -14,7 +14,7 @@
 body {
     text-align: center;
     font-family: HappyMonkey, serif;
-    background-color: #a2d2ff;
+    background: linear-gradient(#a2d2ff, #efb0c9);
     color: #ffffff;
 
 }
