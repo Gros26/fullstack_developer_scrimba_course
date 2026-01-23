@@ -19,12 +19,16 @@ body {
 
 }
 
-h1, h2, h4 {
+h1, h2, h4, h3 {
     text-shadow: 0px 0px 1px black;
 }
 
-h2, h4 {
+#bday-age, #bday-date {
     background: #EFB0C9;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #header {
@@ -35,3 +39,20 @@ h2, h4 {
 
 }
 
+.gift-img {
+    width: 400px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
