@@ -65,6 +65,19 @@ h1, h2, h4, h3 {
     justify-content: center;
 }
 
-.gift-img:hover {
-    background-image: url(images/happy.gif);
+#happy-section:hover {
+    background-image: url("images/happy.gif");
 }
+
+#hot-section:hover {
+    background-image: url("images/hot.gif");
+}
+
+#genius-section:hover {
+    background-image: url("images/genius.gif");
+}
+
+#badass-section:hover {
+    background-image: url("images/badass.gif");
+}
+
