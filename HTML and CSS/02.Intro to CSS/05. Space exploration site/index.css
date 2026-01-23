@@ -12,12 +12,21 @@
     font-weight: 700;
 }
 
-body {
+#hero-section {
     background-image: url("images/galaxy.webp");
-    color: white;
     background-size: cover;
+    padding: 50px 0 100px 0;
+}
+
+body {
+    margin: 0;
+    color: #82a5ca;
     font-family: Orbitron, sans-serif;
     text-align: center;
+}
+
+h1 {
+    text-shadow: 0px 0px 5px black;
 }
 
 .btn {
@@ -25,6 +34,8 @@ body {
     border: 0;
     padding: 8px 12px;
     font-family: inherit;
+    font-weight: bold;
+    color: #82a5ca;
 }
 
 .underline {
