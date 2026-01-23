@@ -1,0 +1,17 @@
+.container {
+    border: 8px solid #016a26;
+    height: 260px;
+    display: flex;
+    justify-content: space-around; /*Esto modifica el eje x*/
+    align-items: start; /*Esto modifica el eje y*/
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 2px;
+    font-size: 50px;
+    border: 2px solid black;
+    background: linear-gradient(#14463d,#016a26);
+}
