@@ -8,11 +8,14 @@ const imgs = [
     "images/hip3.jpg"
 ]
 
+const container = document.getElementById("container")
+
 function renderImgs(images) {
-    const container = document.getElementById("container")
+    let imgsDOM = ""
     images.forEach(element => {
-        container.innerHTML += `<img class="team-img" src="${element}">`
+        imgsDOM += `<img class="team-img" src="${element}">`
     });
+    container.innerHTML = imgsDOM
 }
 
 renderImgs(imgs)
