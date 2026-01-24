@@ -13,7 +13,7 @@ const container = document.getElementById("container")
 function renderImgs(images) {
     let imgsDOM = ""
     images.forEach(element => {
-        imgsDOM += `<img class="team-img" src="${element}">`
+        imgsDOM += `<img alt="Employee in the company" class="team-img" src="${element}">`
     });
     container.innerHTML = imgsDOM
 }
