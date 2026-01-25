@@ -10,10 +10,10 @@ let toAdd
 
 renderStockTicker(getStockData())
 
-function getFreshStockData() {
+setInterval(function() {
     const freshData = getStockData()
     renderStockTicker(freshData)
-}
+}, 1500)
  
 
 function renderStockTicker(stockData) {
@@ -25,5 +25,4 @@ function renderStockTicker(stockData) {
     stockDisplayPrice.textContent = `Price: ${price} ${toAdd}`
     stockDisplayTime.textContent = `Time: ${time}`
     oldPrice = newPrice
-    setTimeout(getFreshStockData, 1500)
 }
