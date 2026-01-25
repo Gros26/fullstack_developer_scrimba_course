@@ -17,12 +17,13 @@ function getFreshStockData() {
  
 
 function renderStockTicker(stockData) {
-    newPrice = stockData.price
-    stockDisplayName.textContent = `Name: ${stockData.name}`
-    stockDisplaySymbol.textContent = `Symbol: ${stockData.symbol}`
+    const {name, symbol, price, time} = stockData
+    newPrice = price
+    stockDisplayName.textContent = `Name: ${name}`
+    stockDisplaySymbol.textContent = `Symbol: ${symbol}`
     toAdd = oldPrice > newPrice ? "📉" : oldPrice < newPrice ? "📈" : "▶️"
-    stockDisplayPrice.textContent = `Price: ${stockData.price} ${toAdd}`
-    stockDisplayTime.textContent = `Time: ${stockData.time}`
+    stockDisplayPrice.textContent = `Price: ${price} ${toAdd}`
+    stockDisplayTime.textContent = `Time: ${time}`
     oldPrice = newPrice
     setTimeout(getFreshStockData, 1500)
 }
