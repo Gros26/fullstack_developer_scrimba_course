@@ -4,4 +4,9 @@ function logAnswer(answer, points) {
 
 console.log("What is the capital of Peru?")
 
-setTimeout(logAnswer, 3000, "Lima", 10)
+const questionTimer = setTimeout(logAnswer, 3000, "Lima", 10)
+
+document.getElementById("stop").addEventListener("click", function() {
+    clearTimeout(questionTimer) // Esto cancela el setTimeout, o sea que ya no se dispara despues de los 3 segundos si se aprieta el boton
+    console.log("Canceled questionTimer")
+})
