@@ -7,3 +7,15 @@ const message2 =  exerciseTimeMins2 < 30 ? "Doing good!" : exerciseTimeMins2 < 6
 
 console.log(message)
 console.log(message2)
+
+//////////////////
+
+const playerGuess = 3 
+const correctAnswer = 6
+
+const message3 = playerGuess === correctAnswer ? 'Correct' : 'Wrong'
+
+const message4 = playerGuess < correctAnswer ? 'Too low' : playerGuess > correctAnswer ? 'Too high' : 'Exactly right!'
+
+console.log(message3)
+console.log(message4)
