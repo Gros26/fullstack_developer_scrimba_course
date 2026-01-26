@@ -18,7 +18,9 @@ async function weatherNY(apiURL) {
         console.log('B')
     } catch(error) {
         console.error(error)
-    } 
+    } finally {
+        console.log("Finished operation")
+    }
 }
 
 weatherNY(apiURL)
