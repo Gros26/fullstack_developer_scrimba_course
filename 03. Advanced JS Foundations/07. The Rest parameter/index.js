@@ -6,7 +6,7 @@ function setPermissionLevel(permissionLevel, name1, name2, name3) {
 
 setPermissionLevel("admin", "Clare", "Josh", "Per")
 
-function setPermissionLevelImprove(permissionLevel, ...names) {
+function setPermissionLevelImprove(permissionLevel, ...names) { // el parametro rest siempre debe ser el ultimo
     names.forEach(element => {
         console.log(`Now ${element} has ${permissionLevel} level access.`)
     });
