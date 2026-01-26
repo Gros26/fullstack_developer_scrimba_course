@@ -1,19 +1,6 @@
 let htmlTemplate = ""
 
 function getLabelsHtml(text, sender, ...labels) {
-/*
-Challenge:
-2. Update the HTML template where you 
-   see **NAME**.
-3. Return HTML template for each label.
-*/
-
-// `<div class="label-card">
-//     <p>Dear **NAME** </p>
-//     <p>${text}</p>
-//     <p>Best wishes,</p>
-//     <p>${sender}</p>
-// </div>`
     labels.forEach(element => {
         htmlTemplate +=`<div class="label-card">
                             <p>Dear ${element.name} </p>
