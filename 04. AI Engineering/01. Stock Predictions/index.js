@@ -1,4 +1,5 @@
 import { dates } from './utils/dates.js'
+import { API_KEY } from './config.js'
 // import OpenAI from "openai"
 
 const tickersArr = []
