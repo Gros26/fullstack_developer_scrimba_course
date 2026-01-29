@@ -1,5 +1,5 @@
 import { dates } from './utils/dates.js'
-import { API_KEY } from './config.js'
+import { POLYGON_API_KEY, GROQ_API_KEY } from './config.js'
 // import OpenAI from "openai"
 
 const tickersArr = []
@@ -83,3 +83,9 @@ function renderReport(output) {
     report.textContent = output
     outputArea.style.display = 'flex'
 }
+
+
+const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    method: 'POST',
+    
+})
